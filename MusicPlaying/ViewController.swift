@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import KVNProgress
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        KVNProgress.setConfiguration(KVNProgressConfiguration.default())
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        KVNProgress.show(withStatus: "this is a test")
     }
 
     override func didReceiveMemoryWarning() {

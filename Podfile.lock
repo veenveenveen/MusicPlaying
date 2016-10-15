@@ -1,0 +1,45 @@
+PODS:
+  - AFSoundManager (2.1)
+  - Alamofire (4.0.1)
+  - KGFloatingDrawer (0.2.0)
+  - KVNProgress (2.3.1)
+
+DEPENDENCIES:
+  - AFSoundManager (from `https://github.com/AlvaroFranco/AFSoundManager.git`)
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
+  - KGFloatingDrawer (from `https://github.com/KyleGoddard/KGFloatingDrawer.git`)
+  - KVNProgress (from `https://github.com/AssistoLab/KVNProgress.git`)
+
+EXTERNAL SOURCES:
+  AFSoundManager:
+    :git: https://github.com/AlvaroFranco/AFSoundManager.git
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+  KGFloatingDrawer:
+    :git: https://github.com/KyleGoddard/KGFloatingDrawer.git
+  KVNProgress:
+    :git: https://github.com/AssistoLab/KVNProgress.git
+
+CHECKOUT OPTIONS:
+  AFSoundManager:
+    :commit: d7b68bcf16b6ef2846350d50b6e36e26c2666185
+    :git: https://github.com/AlvaroFranco/AFSoundManager.git
+  Alamofire:
+    :commit: b98fe26cb86c1c1227185d30b87bd57cb45fbe3c
+    :git: https://github.com/Alamofire/Alamofire.git
+  KGFloatingDrawer:
+    :commit: c9d68d5cfa13c3027f9365879bb674c373d9799c
+    :git: https://github.com/KyleGoddard/KGFloatingDrawer.git
+  KVNProgress:
+    :commit: afc2bf451c0f1e4af52068ad497c0d7414009738
+    :git: https://github.com/AssistoLab/KVNProgress.git
+
+SPEC CHECKSUMS:
+  AFSoundManager: 232af6154e736e6b2d8c93fafebfafd14fad7510
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  KGFloatingDrawer: b0c2810954bfb61f4d4dd01b8891d5c23933e368
+  KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
+
+PODFILE CHECKSUM: 353d0450eb02eae68dae94a70850f2a5ab692989
+
+COCOAPODS: 1.0.1

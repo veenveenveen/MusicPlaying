@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ECD0A7E9C802A27CCD9E2BB /* Pods_MusicPlaying.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 249273F56E9D6FE71A9A9996 /* Pods_MusicPlaying.framework */; };
 		90D66CED1DB1CCFB00BBEDA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66CEC1DB1CCFB00BBEDA4 /* AppDelegate.swift */; };
 		90D66CEF1DB1CCFB00BBEDA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66CEE1DB1CCFB00BBEDA4 /* ViewController.swift */; };
 		90D66CF21DB1CCFB00BBEDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D66CF01DB1CCFB00BBEDA4 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13E52BEFB0DE51171A33C916 /* Pods-MusicPlaying.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlaying.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicPlaying/Pods-MusicPlaying.debug.xcconfig"; sourceTree = "<group>"; };
+		249273F56E9D6FE71A9A9996 /* Pods_MusicPlaying.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicPlaying.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D66CE91DB1CCFB00BBEDA4 /* MusicPlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D66CEC1DB1CCFB00BBEDA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90D66CEE1DB1CCFB00BBEDA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,8 @@
 		90D66CF31DB1CCFB00BBEDA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90D66CF61DB1CCFB00BBEDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90D66CF81DB1CCFB00BBEDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D66CFF1DB1CF0E00BBEDA4 /* MusicPlaying-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicPlaying-Bridging-Header.h"; sourceTree = "<group>"; };
+		C15CE88D7F87E9ACDCAB5383 /* Pods-MusicPlaying.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlaying.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicPlaying/Pods-MusicPlaying.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECD0A7E9C802A27CCD9E2BB /* Pods_MusicPlaying.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299411F5DBDAA6C62EBDBB68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13E52BEFB0DE51171A33C916 /* Pods-MusicPlaying.debug.xcconfig */,
+				C15CE88D7F87E9ACDCAB5383 /* Pods-MusicPlaying.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		90D66CE01DB1CCFB00BBEDA4 = {
 			isa = PBXGroup;
 			children = (
 				90D66CEB1DB1CCFB00BBEDA4 /* MusicPlaying */,
 				90D66CEA1DB1CCFB00BBEDA4 /* Products */,
+				299411F5DBDAA6C62EBDBB68 /* Pods */,
+				D21B3B491F9A95E65C50E164 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,25 @@
 				90D66CF31DB1CCFB00BBEDA4 /* Assets.xcassets */,
 				90D66CF51DB1CCFB00BBEDA4 /* LaunchScreen.storyboard */,
 				90D66CF81DB1CCFB00BBEDA4 /* Info.plist */,
+				90D66CFE1DB1CEDF00BBEDA4 /* Supporting Files */,
 			);
 			path = MusicPlaying;
+			sourceTree = "<group>";
+		};
+		90D66CFE1DB1CEDF00BBEDA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90D66CFF1DB1CF0E00BBEDA4 /* MusicPlaying-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D21B3B491F9A95E65C50E164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				249273F56E9D6FE71A9A9996 /* Pods_MusicPlaying.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90D66CFB1DB1CCFB00BBEDA4 /* Build configuration list for PBXNativeTarget "MusicPlaying" */;
 			buildPhases = (
+				4160A5591CC802A6B59E47F6 /* [CP] Check Pods Manifest.lock */,
 				90D66CE51DB1CCFB00BBEDA4 /* Sources */,
 				90D66CE61DB1CCFB00BBEDA4 /* Frameworks */,
 				90D66CE71DB1CCFB00BBEDA4 /* Resources */,
+				0EA3DDE1DCBF7E1374C885D6 /* [CP] Embed Pods Frameworks */,
+				742B24FF1DB0475DC2032FE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +134,7 @@
 					90D66CE81DB1CCFB00BBEDA4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2Z7NL663JA;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA3DDE1DCBF7E1374C885D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicPlaying/Pods-MusicPlaying-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4160A5591CC802A6B59E47F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		742B24FF1DB0475DC2032FE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicPlaying/Pods-MusicPlaying-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90D66CE51DB1CCFB00BBEDA4 /* Sources */ = {
@@ -257,26 +343,33 @@
 		};
 		90D66CFC1DB1CCFB00BBEDA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E52BEFB0DE51171A33C916 /* Pods-MusicPlaying.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2Z7NL663JA;
 				INFOPLIST_FILE = MusicPlaying/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huatengIOT.MusicPlaying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicPlaying/MusicPlaying-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		90D66CFD1DB1CCFB00BBEDA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15CE88D7F87E9ACDCAB5383 /* Pods-MusicPlaying.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2Z7NL663JA;
 				INFOPLIST_FILE = MusicPlaying/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huatengIOT.MusicPlaying;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicPlaying/MusicPlaying-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +393,7 @@
 				90D66CFD1DB1CCFB00BBEDA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
