@@ -13,6 +13,9 @@
 		90D66CF21DB1CCFB00BBEDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D66CF01DB1CCFB00BBEDA4 /* Main.storyboard */; };
 		90D66CF41DB1CCFB00BBEDA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D66CF31DB1CCFB00BBEDA4 /* Assets.xcassets */; };
 		90D66CF71DB1CCFB00BBEDA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D66CF51DB1CCFB00BBEDA4 /* LaunchScreen.storyboard */; };
+		90D66D791DB1E24800BBEDA4 /* HMRadioImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66D781DB1E24800BBEDA4 /* HMRadioImageView.swift */; };
+		90D66D7D1DB1FA4500BBEDA4 /* cm2_play_needle_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D66D7C1DB1FA4500BBEDA4 /* cm2_play_needle_play.png */; };
+		90D66D7F1DB210E800BBEDA4 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90D66D7E1DB210E800BBEDA4 /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		90D66CF61DB1CCFB00BBEDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90D66CF81DB1CCFB00BBEDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D66CFF1DB1CF0E00BBEDA4 /* MusicPlaying-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicPlaying-Bridging-Header.h"; sourceTree = "<group>"; };
+		90D66D781DB1E24800BBEDA4 /* HMRadioImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMRadioImageView.swift; sourceTree = "<group>"; };
+		90D66D7C1DB1FA4500BBEDA4 /* cm2_play_needle_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cm2_play_needle_play.png; sourceTree = "<group>"; };
+		90D66D7E1DB210E800BBEDA4 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 		C15CE88D7F87E9ACDCAB5383 /* Pods-MusicPlaying.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPlaying.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicPlaying/Pods-MusicPlaying.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,12 +77,14 @@
 		90D66CEB1DB1CCFB00BBEDA4 /* MusicPlaying */ = {
 			isa = PBXGroup;
 			children = (
+				90D66D771DB1E20000BBEDA4 /* Views */,
 				90D66CEC1DB1CCFB00BBEDA4 /* AppDelegate.swift */,
 				90D66CEE1DB1CCFB00BBEDA4 /* ViewController.swift */,
 				90D66CF01DB1CCFB00BBEDA4 /* Main.storyboard */,
 				90D66CF31DB1CCFB00BBEDA4 /* Assets.xcassets */,
 				90D66CF51DB1CCFB00BBEDA4 /* LaunchScreen.storyboard */,
 				90D66CF81DB1CCFB00BBEDA4 /* Info.plist */,
+				90D66D741DB1DEDD00BBEDA4 /* Resources */,
 				90D66CFE1DB1CEDF00BBEDA4 /* Supporting Files */,
 			);
 			path = MusicPlaying;
@@ -88,6 +96,23 @@
 				90D66CFF1DB1CF0E00BBEDA4 /* MusicPlaying-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90D66D741DB1DEDD00BBEDA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90D66D7C1DB1FA4500BBEDA4 /* cm2_play_needle_play.png */,
+				90D66D7E1DB210E800BBEDA4 /* default.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		90D66D771DB1E20000BBEDA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90D66D781DB1E24800BBEDA4 /* HMRadioImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D21B3B491F9A95E65C50E164 /* Frameworks */ = {
@@ -162,9 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D66D7D1DB1FA4500BBEDA4 /* cm2_play_needle_play.png in Resources */,
 				90D66CF71DB1CCFB00BBEDA4 /* LaunchScreen.storyboard in Resources */,
 				90D66CF41DB1CCFB00BBEDA4 /* Assets.xcassets in Resources */,
 				90D66CF21DB1CCFB00BBEDA4 /* Main.storyboard in Resources */,
+				90D66D7F1DB210E800BBEDA4 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +252,7 @@
 			files = (
 				90D66CEF1DB1CCFB00BBEDA4 /* ViewController.swift in Sources */,
 				90D66CED1DB1CCFB00BBEDA4 /* AppDelegate.swift in Sources */,
+				90D66D791DB1E24800BBEDA4 /* HMRadioImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
